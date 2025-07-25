@@ -1,0 +1,11 @@
+Model Information:
+* title:	glTF/glb Magic Wand animation
+* source:	https://sketchfab.com/3d-models/gltfglb-magic-wand-animation-3d62992d9c0c4e22bdbb677a11b3a5fb
+* author:	IZ.MdVerz (https://sketchfab.com/IZ.MdVerz)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "glTF/glb Magic Wand animation" (https://sketchfab.com/3d-models/gltfglb-magic-wand-animation-3d62992d9c0c4e22bdbb677a11b3a5fb) by IZ.MdVerz (https://sketchfab.com/IZ.MdVerz) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

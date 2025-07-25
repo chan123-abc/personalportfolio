@@ -1,0 +1,32 @@
+/* Hide rotating ring on mobile */
+@media (max-width: 767.98px) {
+    #ringContainer {
+        display: none !important;
+    }
+
+    /* Flex container for mobile models */
+    .d-md-none-models {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        justify-content: space-between;
+        z-index: 5;
+        padding: 0 10px;
+    }
+
+    .d-md-none-models .left-models,
+    .d-md-none-models .right-models {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .d-md-none-models model-viewer {
+        width: 60px;
+        height: 60px;
+        animation: none !important;
+    }
+}

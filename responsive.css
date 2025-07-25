@@ -1,0 +1,103 @@
+/* General Styles - for desktop and larger screens */
+#iconRing {
+    display: block;
+}
+
+.d-md-none a {
+    color: white;
+    text-decoration: none;
+}
+
+.d-md-none {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    padding: 0 20px;
+    transition: all 0.5s ease;
+}
+
+.left-icons, .right-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.left-icons {
+    margin-right: 20px;
+}
+
+.right-icons {
+    margin-left: 20px;
+}
+
+@keyframes iconPop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.d-md-none .icon-wrapper {
+    opacity: 1;
+    animation: iconPop 0.5s ease forwards;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+    transition: transform 0.5s ease, margin 0.5s ease;
+}
+
+.d-md-none .icon-wrapper:nth-child(1) { animation-delay: 0s; }
+.d-md-none .icon-wrapper:nth-child(2) { animation-delay: 0.1s; }
+.d-md-none .icon-wrapper:nth-child(3) { animation-delay: 0.2s; }
+.d-md-none .icon-wrapper:nth-child(4) { animation-delay: 0.3s; }
+
+model-viewer.floating {
+    width: 300px;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    animation: float 4s ease-in-out infinite, fadeInModel 2s ease-in forwards;
+    transition: all 0.5s ease;
+}
+
+
+/* Mobile Specific Styles */
+@media (max-width: 767.98px) {
+    #iconRing {
+        display: none !important;
+    }
+
+    .d-md-none {
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    .left-icons, .right-icons {
+        gap: 15px;
+    }
+
+    .d-md-none .icon-wrapper {
+        width: 40px;
+        height: 40px;
+        margin: 5px 0;
+    }
+
+    model-viewer.floating {
+        width: 60vw;
+        max-width: 250px;
+        max-height: 250px;
+    }
+}

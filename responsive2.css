@@ -1,0 +1,72 @@
+/* Mobile layout */
+@media (max-width: 768px) {
+    .model-container {
+      position: absolute !important;
+      width: 80px !important;
+      height: 80px !important;
+      animation: none !important;
+    }
+  
+    /* Specific model adjustments */
+    .model-container.crystal { 
+      width: 60px !important;
+      height: 80px !important;
+    }
+    .model-container.power { 
+      width: 70px !important;
+      height: 80px !important;
+    }
+    .model-container.cauldron { 
+      width: 80px !important;
+      height: 80px !important;
+    }
+    .model-container.staff { 
+      width: 80px !important;
+      height: 90px !important;
+    }
+    .model-container.hat { 
+      width: 80px !important;
+      height: 90px !important;
+    }
+  }
+  
+  /* Small mobile devices */
+  @media (max-width: 480px) {
+    .model-container {
+      width: 70px !important;
+      height: 70px !important;
+    }
+    
+    .model-container.crystal { 
+      width: 50px !important;
+      height: 70px !important;
+    }
+    .model-container.power { 
+      width: 60px !important;
+      height: 70px !important;
+    }
+    .model-container.cauldron { 
+      width: 70px !important;
+      height: 70px !important;
+    }
+    .model-container.staff { 
+      width: 70px !important;
+      height: 80px !important;
+    }
+    .model-container.hat { 
+      width: 70px !important;
+      height: 80px !important;
+    }
+  }
+  
+  /* Landscape orientation */
+  @media (max-height: 500px) {
+    #ringContainer {
+      height: 80vh;
+      top: 10vh;
+    }
+    
+    .model-container {
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
